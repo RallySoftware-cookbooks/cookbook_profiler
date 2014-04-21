@@ -6,7 +6,8 @@ Add the following line to your `Berksfile` - `cookbook 'cookbook_profiler', gith
 Then add the following to your `metadata.rb` - `depends 'cookbook_profiler'`
 
 You can then do the following to see the output
-Run chef client in debug mode - `chef-client -ldebug`
+* Add the cookbook to the top of the run list
+*Run chef client in debug mode - `chef-client -ldebug`
 
 Or run a test kitchen run
 * Add the following to your `.kitchen.yml` - `recipe[cookbook_profiler]`
